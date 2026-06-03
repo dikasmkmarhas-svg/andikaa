@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>PPDB SMK MARHAS</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    background:#f5f5f5;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    background:#fff;
+    border-bottom:1px solid #ddd;
+}
+
+.logo{
+    width:60px;
+}
+
+.brand{
+    color:#20b26b;
+    font-size:20px;
+    font-weight:500;
+}
+
+.btn-daftar{
+    background:#f6be4b;
+    border:none;
+    border-radius:10px;
+    padding:8px 25px;
+    font-weight:bold;
+}
+
+/* HERO */
+.hero{
+    height:520px;
+    background:
+    linear-gradient(rgba(70,120,200,.45),rgba(70,120,200,.45)),
+    url('image 19.png');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+.hero h1{
+    color:white;
+    font-size:60px;
+    font-weight:300;
+}
+
+.hero h2{
+    color:#ffbf00;
+    font-size:55px;
+    font-weight:400;
+}
+
+/* FORM CARD */
+.form-card{
+    margin-top:-130px;
+    background:white;
+    padding:50px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    position:relative;
+    z-index:10;
+}
+
+.form-control,
+.form-select{
+    border:1px solid #444;
+}
+
+.form-label{
+    font-weight:600;
+}
+
+.btn-kirim{
+    background:#00e600;
+    color:white;
+    width:180px;
+    font-weight:bold;
+}
+
+.btn-batal{
+    background:#cfcfcf;
+    color:white;
+    width:180px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+.footer{
+    margin-top:120px;
+    background:linear-gradient(#4b8dff,#0e2f87);
+    color:white;
+    padding:80px 0;
+}
+
+.footer ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer ul li{
+    margin-bottom:10px;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer-logo{
+    width:70px;
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+
+<a class="navbar-brand d-flex align-items-center" href="#">
+<img src="images.png"
+class="logo me-3">
+<span class="brand">SMK MARHAS MARGAHAYU</span>
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav mx-auto">
+<li class="nav-item"><a class="nav-link fw-bold" href="index.html">beranda</a></li>
+<li class="nav-item"><a class="nav-link fw-bold" href="index.html">tentang</a></li>
+<li class="nav-item"><a class="nav-link fw-bold" href="index.html">program</a></li>
+<li class="nav-item"><a class="nav-link fw-bold" href="index.html">kontak</a></li>
+</ul>
+
+<button class="btn btn-daftar">
+daftar
+</button>
+
+</div>
+</div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero d-flex flex-column justify-content-center align-items-center">
+
+<h1>MULAI MASA DEPAN</h1>
+<h2>GEMILANG DISINI</h2>
+
+</section>
+
+<!-- FORM -->
+<div class="container">
+
+<div class="form-card">
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="mb-4">
+<label class="form-label">
+Nama Lengkap (sesuai akta kelahiran)
+</label>
+<div class="input-group">
+<span class="input-group-text">
+<i class="fa-solid fa-user"></i>
+</span>
+<input type="text" class="form-control" placeholder="Masukkan Nama">
+</div>
+</div>
+
+<div class="mb-4">
+<label class="form-label">Tempat Lahir</label>
+<div class="input-group">
+<span class="input-group-text">
+<i class="fa-solid fa-user"></i>
+</span>
+<input type="text" class="form-control" placeholder="Masukkan Tempat Lahir">
+</div>
+</div>
+
+<div class="mb-4">
+<label class="form-label">Jenis Kelamin</label>
+
+<div class="d-flex gap-4">
+
+<div class="form-check">
+<input class="form-check-input" type="radio" name="jk">
+<label class="form-check-label">
+Laki-laki
+</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="radio" name="jk">
+<label class="form-check-label">
+Perempuan
+</label>
+</div>
+
+</div>
+
+</div>
+
+<div class="mb-4">
+<label class="form-label">
+Alamat Lengkap
+</label>
+
+<div class="input-group">
+<span class="input-group-text">
+<i class="fa-solid fa-user"></i>
+</span>
+<input type="text" class="form-control">
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="mb-4">
+<label class="form-label">NIS</label>
+<div class="input-group">
+<span class="input-group-text">
+<i class="fa-solid fa-user"></i>
+</span>
+<input type="text" class="form-control">
+</div>
+</div>
+
+<div class="mb-4">
+<label class="form-label">
+Tanggal Lahir
+</label>
+<input type="date" class="form-control">
+</div>
+
+<div class="mb-4">
+<label class="form-label">
+Asal Sekolah
+</label>
+<div class="input-group">
+<span class="input-group-text">
+<i class="fa-solid fa-school"></i>
+</span>
+<input type="text" class="form-control">
+</div>
+</div>
+
+<div class="mb-4">
+<label class="form-label">
+Agama
+</label>
+
+<select class="form-select">
+<option>Islam</option>
+<option>Kristen</option>
+<option>Katolik</option>
+<option>Hindu</option>
+<option>Buddha</option>
+<option>Konghucu</option>
+</select>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="mt-5">
+
+<button class="btn btn-kirim me-4">
+Kirim
+</button>
+
+<button type="reset" class="btn btn-batal">
+Batal
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-3">
+
+<img src="images.png"
+class="footer-logo mb-3">
+
+<h5>Teknik Permesinan</h5>
+
+<p>
+Pengembangan Perangkat Lunak dan Gim
+</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h3>Kontak</h3>
+
+<ul>
+<li>+62 12345678910</li>
+<li>Margahayu, Kabupaten Bandung</li>
+<li>Hello@gmail.com</li>
+</ul>
+
+</div>
+
+<div class="col-md-2">
+
+<h3>Navigasi</h3>
+
+<ul>
+<li><a href="#">Beranda</a></li>
+<li><a href="#">Profil</a></li>
+<li><a href="#">Karya Siswa</a></li>
+<li><a href="#">Kontak</a></li>
+</ul>
+
+</div>
+
+<div class="col-md-3">
+
+<h3>Ikuti Kami</h3>
+
+<ul>
+<li><i class="fab fa-facebook"></i> Facebook</li>
+<li><i class="fab fa-instagram"></i> Instagram</li>
+<li><i class="fab fa-tiktok"></i> Tiktok</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

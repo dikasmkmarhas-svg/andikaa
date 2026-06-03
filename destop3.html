@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPDB SMK MARHAS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="logomarhas.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+        }
+
+        .hero-card {
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .hero-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .nav-tabs .nav-link {
+            border: none;
+            padding: 12px 24px;
+            font-weight: 500;
+        }
+
+        .nav-tabs .nav-link.active {
+            background-color: #0d6efd;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .price-tag {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .social-vertical {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .social-vertical a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center">
+                <img src="images.png" alt="Logo" class="logo me-2">
+                <span class="fw-bold text-success">SMK MARHAS MARGAHAYU</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Program</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Tentang</a></li>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-warning text-black fw-bold px-4" href="register.html">Daftar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-4">
+
+        <!-- Tab -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h5 class="mb-0">Filter</h5>
+            <ul class="nav nav-pills" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="new-tab" data-bs-toggle="tab" data-bs-target="#new"
+                        type="button">New Item</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="best-selling-tab" data-bs-toggle="tab" data-bs-target="#bestselling"
+                        type="button">Best Selling</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="best-rated-tab" data-bs-toggle="tab" data-bs-target="#bestrated"
+                        type="button">Best Rated</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="new" role="tabpanel">
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card hero-card h-100">
+                            <div class="position-relative">
+                                <img src="Screenshot 2026-06-03 073338.png" class="card-img-top" alt="Desain 1">
+                                <div class="price-tag">Gratis</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Aplikasi Sistem Register Facebook</h6>
+                                <p class="text-muted small">By: PPLG</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p>★★★★☆</p>
+                                        <span class="ms-2">6 Suka</span>
+                                    </div>
+                                    <a href="priview1.html" class="btn btn-dark btn-sm">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card hero-card h-100">
+                            <div class="position-relative">
+                                <img src="Screenshot 2026-06-03 073436.png" class="card-img-top" alt="Desain 2">
+                                <div class="price-tag">Gratis</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Aplikasi Sistem UI/UX</h6>
+                                <p class="text-muted small">By: PPLG</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p>★★★★☆</p>
+                                        <span class="ms-2">7 Suka</span>
+                                    </div>
+                                    <a href="priview2.html" class="btn btn-dark btn-sm">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card hero-card h-100">
+                            <div class="position-relative">
+                                <img src="Screenshot 2026-06-03 075221.png" class="card-img-top" alt="Desain 3">
+                                <div class="price-tag">Gratis</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Aplikasi Sistem Dashboard</h6>
+                                <p class="text-muted small">By: PPLG</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p>★★★★☆</p>
+                                        <span class="ms-2">9 Suka</span>
+                                    </div>
+                                    <a href="priview3.html" class="btn btn-dark btn-sm">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Best Selling -->
+            <div class="tab-pane fade" id="bestselling" role="tabpanel">
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card hero-card h-100">
+                            <div class="position-relative">
+                                <img src="Screenshot 2026-06-03 075836.png" class="card-img-top" alt="Desain 1">
+                                <div class="price-tag">Gratis</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Contoh sistem aplikasi sistem login register</h6>
+                                <p class="text-muted small">By: PPLG</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        ★★★★☆
+                                        <span class="ms-2">4 Suka</span>
+                                    </div>
+                                    <a href="bestpriview1.html" class="btn btn-dark btn-sm">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card hero-card h-100">
+                            <div class="position-relative">
+                                <img src="Screenshot 2026-06-03 075940.png" class="card-img-top" alt="Desain 2">
+                                <div class="price-tag">Gratis</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">aplikasi sistem register instagram</h6>
+                                <p class="text-muted small">By: PPLG</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p>★★★★☆</p>
+                                        <span class="ms-2">3 Suka</span>
+                                    </div>
+                                    <a href="bestpriview2.html" class="btn btn-dark btn-sm">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card hero-card h-100">
+                            <div class="position-relative">
+                                <img src="Screenshot 2026-06-03 080032.png" class="card-img-top" alt="Desain 3">
+                                <div class="price-tag">Gratis</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">website tentang seragam sekolah</h6>
+                                <p class="text-muted small">By: PPLG</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p>★★★★☆</p>
+                                        <span class="ms-2">7 Suka</span>
+                                    </div>
+                                    <a href="bestpriview3.html" class="btn btn-dark btn-sm">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Best Rated Tab -->
+            <div class="tab-pane fade" id="bestrated" role="tabpanel">
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card hero-card h-100">
+                            <div class="position-relative">
+                                <img src="website seblak.png" class="card-img-top" alt="Desain 1">
+                                <div class="price-tag">Gratis</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">website seblak</h6>
+                                <p class="text-muted small">By: PPLG</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p>★★★★☆</p>
+                                        <span class="ms-2">9 Suka</span>
+                                    </div>
+                                    <a href="preview7.html" class="btn btn-dark btn-sm">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card hero-card h-100">
+                            <div class="position-relative">
+                                <img src="Rectangle 12 (2).png" class="card-img-top" alt="Desain 2">
+                                <div class="price-tag">Gratis</div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">website tentang travel</h6>
+                                <p class="text-muted small">By: PPLG</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p>★★★★☆</p>
+                                        <span class="ms-2">10 Suka</span>
+                                    </div>
+                                    <a href="preview8.html" class="btn btn-dark btn-sm">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <img src="images.png" alt="Logo" class="mb-3">
+                    <p><strong>Teknik Permesinan</strong><br>pengembangan Perangkat Lunak dan Gim</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Kontak</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-telephone"></i> +62 12345678910</li>
+                        <li><i class="bi bi-geo-alt"></i> Jl. Terusan Kopo No. 385/299, RT.04/RW.06, Desa Margahayu Selatan</li>
+                        <li><i class="bi bi-envelope"></i> Hello@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Navigasi</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="bootstrap.html#beranda" class="text-white text-decoration-none">Beranda</a></li>
+                        <li class="mb-2"><a href="bootstrap.html#tentang" class="text-white text-decoration-none">Profil</a></li>
+                        <li class="mb-2"><a href="bootstrap.html#program" class="text-white text-decoration-none">Karya Siswa</a></li>
+                        <li class="mb-2"><a href="bootstrap.html#kontak" class="text-white text-decoration-none">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Ikuti Kami</h5>
+                    <div class="social-vertical mt-3">
+                        <a href="https://www.facebook.com/people/smk-marhas-margahayu/100068956913880/#"><i class="bi bi-facebook fs-4"></i> Facebook</a>
+                        <a href="https://www.instagram.com/marhasupdate/"><i class="bi bi-instagram fs-4"></i> Instagram</a>
+                        <a href="https://www.tiktok.com/@marhasupdate"><i class="bi bi-tiktok fs-4"></i> TikTok</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Detail Karya Siswa</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+body{
+    background:#f8f9fa;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* Navbar */
+.navbar{
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+    width:55px;
+}
+
+.brand-text{
+    color:#42b883;
+    font-weight:700;
+    font-size:30px;
+}
+
+.btn-daftar{
+    background:#f4b63a;
+    color:#000;
+    font-weight:600;
+    padding:10px 35px;
+    border-radius:8px;
+    border:none;
+}
+
+/* Content */
+.breadcrumb-text{
+    color:#b8b8b8;
+    margin-top:50px;
+}
+
+.project-title{
+    font-size:42px;
+    font-weight:700;
+}
+
+.tab-menu{
+    border-bottom:1px solid #ddd;
+}
+
+.tab-menu a{
+    text-decoration:none;
+    color:#555;
+    margin-right:30px;
+    padding-bottom:10px;
+}
+
+.tab-menu .active{
+    color:#4c84ff;
+    border-bottom:2px solid #4c84ff;
+}
+
+/* Card */
+.custom-card{
+    border-radius:12px;
+    border:1px solid #ddd;
+    background:#fff;
+}
+
+.demo-btn{
+    background:#e0a218;
+    color:white;
+}
+
+.download-btn{
+    background:#0d6efd;
+    color:white;
+}
+
+/* Profile */
+.profile-img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    border:2px solid #ccc;
+}
+
+/* Footer */
+.footer{
+    margin-top:80px;
+    background:linear-gradient(180deg,#4d8ef7,#0f2c83);
+    color:white;
+    padding:70px 0;
+}
+
+.footer ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer ul li{
+    margin-bottom:12px;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+}
+
+.project-image{
+    width:100%;
+    border-radius:10px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-white">
+<div class="container">
+
+<a class="navbar-brand d-flex align-items-center" href="#">
+<img src="images.png"
+class="logo me-3">
+
+<span class="brand-text">SMK MARHAS MARGAHAYU</span>
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav mx-auto">
+<li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Program</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Tentang</a></li>
+</ul>
+
+<button class="btn-daftar">
+Daftar
+</button>
+
+</div>
+</div>
+</nav>
+
+<!-- Content -->
+<div class="container py-5">
+
+<p class="breadcrumb-text">
+karya siswa > Aplikasi Sistem Manajemen Pemilihan Kepala Desa berbasis web
+</p>
+
+<h1 class="project-title mb-4">
+Aplikasi Sistem Informasi Manajemen Pemilihan Kepala Desa berbasis web
+</h1>
+
+<div class="tab-menu mb-4">
+<a href="#" class="active">Description</a>
+<a href="#">Preview</a>
+<a href="#">Comments</a>
+</div>
+
+<div class="row">
+
+<!-- Left -->
+<div class="col-lg-8">
+
+<img src="Screenshot 2026-06-03 080032.png"
+class="project-image mb-4">
+
+<p style="line-height:2;">
+The Facebook landing page represents a modern approach to digital
+authentication by blending brand identity with a high-conversion
+user interface. On the left, the platform uses vibrant imagery
+and a compelling slogan to engage users.
+
+The interface provides a clean and functional authentication suite,
+featuring clear input fields and a prominent registration button.
+This registration process is designed to be secure and seamless,
+allowing users to integrate into the broader ecosystem while
+maintaining a distraction-free experience.
+</p>
+
+</div>
+
+<!-- Right -->
+<div class="col-lg-4">
+
+<div class="custom-card p-4 mb-4">
+
+<h3 class="fw-bold mb-3">Product</h3>
+
+<p>
+The goal is to create a simple yet functional workflow
+combining clean visual elements and secure backend systems.
+</p>
+
+<div class="d-flex gap-2">
+<button class="btn demo-btn flex-fill">
+<a href="https://www.figma.com/proto/6Bp54xVv8xBC0LLbc0uK4w/latihan---ANDIKA-ANWARUDIN--semester-1?node-id=2-111&t=uYuUiI3XwHhl80eI-1" >View Demo</a>
+</button>
+
+<button class="btn download-btn flex-fill">
+Download
+</button>
+</div>
+
+</div>
+
+<div class="custom-card p-4 mb-4">
+
+<div class="d-flex align-items-center">
+
+<img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+class="profile-img">
+
+<div class="ms-3">
+<h5 class="mb-0">ANDIKA ANWARUDIN</h5>
+<p class="text-muted mb-0">
+Siswa SMK Marhas
+</p>
+<p class="text-muted">
+Angkatan -1
+</p>
+</div>
+
+</div>
+
+<button class="btn btn-primary w-100 mt-3">
+View Portofolio
+</button>
+
+</div>
+
+<div class="custom-card p-4">
+
+<h5 class="fw-bold mb-3">
+Product Information
+</h5>
+
+<div class="row mb-2">
+<div class="col-5">Last Update</div>
+<div class="col-7">-</div>
+</div>
+
+<div class="row mb-2">
+<div class="col-5">Published</div>
+<div class="col-7">08 Mei 2026</div>
+</div>
+
+<div class="row">
+<div class="col-5">Tag</div>
+<div class="col-7 text-primary">
+Laravel, Sistem Informasi
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-3">
+
+<h4>Teknik Permesinan</h4>
+
+<p>
+pengembangan Perangkat Lunak dan Gim
+</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h4>Kontak</h4>
+
+<ul>
+<li>+62 12345678910</li>
+<li>Margahayu, Bandung</li>
+<li>Hello@gmail.com</li>
+</ul>
+
+</div>
+
+<div class="col-md-2">
+
+<h4>Navigasi</h4>
+
+<ul>
+<li><a href="#">Beranda</a></li>
+<li><a href="#">Profil</a></li>
+<li><a href="#">Karya Siswa</a></li>
+<li><a href="#">Kontak</a></li>
+</ul>
+
+</div>
+
+<div class="col-md-3">
+
+<h4>Ikuti Kami</h4>
+
+<ul>
+<li><i class="fab fa-facebook"></i> Facebook</li>
+<li><i class="fab fa-instagram"></i> Instagram</li>
+<li><i class="fab fa-tiktok"></i> TikTok</li>
+</ul>
+
+</div>
+
+</div>
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
